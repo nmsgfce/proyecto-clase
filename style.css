@@ -1,3 +1,24 @@
 body{
     font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: radial-gradient(#003b14, #000e3b);
+    background-attachment: fixed;
+}
+.img_size{
+    width: 800px;
+}
+.container {
+    display: flex;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+   
+img {
+     max-width: 100%;
+     max-height:100%;
+}
+   
+.text {
+     font-size: 18px;
 }
