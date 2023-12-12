@@ -10,12 +10,107 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <a href="./index.html">Volver a la pagina principal</a>
-    <form>
-        
-    </form>
+    <header id="main-header">
+		
+		<a id="logo-header" href="https://www.ea.com/es-es/">
+            <span class="logo"><img  class="logo" src="img/ea_logo.png" alt="EA Logo"> </span>
+			<span class="site-name">Electronic Arts</span>
+		</a>
 
-    
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="formulario.html">Formulario</a></li>
+        <li><a href="Divisiones.html">Divisiones</a></li>
+			</ul>
+		</nav>
+	</header>
+    <h1>Formulario de Contacto</h1>
+    <br>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Introduzca su nombre:"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Introduzca su Email:"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <p>Nivel de estudios actual:</p>
+                <select id="dropdown" name="studies" class="form-control" required>
+                  <option disabled selected value>Selecciona una opcion:</option>
+                  <option value="ESO">ESO</option>
+                  <option value="Bach">Bachillerato</option>
+                  <option value="GM">Grado Medio</option>
+                  <option value="GS">Grado Superior</option>
+                  <option value="preferNo">Prefiero no decirlo</option>
+                  <option value="other">Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Recomendarias la saga de Need for Speed a algún amigo</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Totalmente</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                  />Es posible</label
+                >
+      
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                  />No creo</label
+                >
+              </div>
+              <div class="form-group">
+                <p>Cuentanos tus comentarios o sugerencias</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Empiece a escribir aqui..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="submit" class="button">
+                  Enviar
+                </button>
+                <br>
+                <button type="reset" id="reset" class="button">
+                    Empezar de nuevo
+                </button>
+              </div>
+        </form>
+    </div>  
 </body>
 </html>
