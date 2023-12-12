@@ -113,3 +113,56 @@ body{
     padding: 0;
     margin: 0;
   }
+  #main-header {
+    background: #333;
+    color: white;
+    height: 110px;
+  }	
+    #main-header a {
+      color: white;
+    }
+  
+  
+  #logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+    #logo-header:hover {
+      color: #ff4f4f;
+    }
+    
+    #logo-header .site-name {
+      display: inline-flex;
+      font-weight: 700;
+      font-size: 1.2em;
+      margin-left: 10px;
+
+    }
+    #logo-header .logo{
+      width: 15%;
+    }
+  nav {
+    display: inline-flex;
+    float: right;
+  }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    
+      nav ul li {
+       margin-right: 20px;
+      }
+        
+        nav ul li a {
+          padding: 10px;
+          text-decoration: none;
+        }
+        
+          nav ul li a:hover {
+            background: #ff4f4f;
+          }
