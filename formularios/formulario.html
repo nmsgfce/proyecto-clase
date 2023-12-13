@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!--Alin Gabriel Cercel. Hecho el 12/12/2023 ;) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Formulario</title>
 </head>
 <body>
     <header id="main-header">
 		
 		<a id="logo-header" href="https://www.ea.com/es-es/">
-            <span class="logo"><img  class="logo" src="img/ea_logo.png" alt="EA Logo"> </span>
+            <span class="logo"><img  class="logo" src="../img/ea_logo.png" alt="EA Logo"> </span>
 			<span class="site-name">Electronic Arts</span>
 		</a>
 
 		<nav>
 			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="formulario.html">Formulario</a></li>
-        <li><a href="Divisiones.html">Divisiones</a></li>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="../formularios/formulario.html">Formulario</a></li>
+        <li><a href="../tablas/Divisiones.html">Divisiones</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,9 +34,8 @@
                 <label id="name-label" for="name">Nombre</label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
                   class="form-control"
+                  id="name"
                   placeholder="Introduzca su nombre:"
                   required
                 />
@@ -44,7 +44,6 @@
                 <label id="email-label" for="email">Email</label>
                 <input
                   type="email"
-                  name="email"
                   id="email"
                   class="form-control"
                   placeholder="Introduzca su Email:"
@@ -68,7 +67,7 @@
                 <label>
                   <input
                     name="user-recommend"
-                    value="definitely"
+                    value="totalmente"
                     type="radio"
                     class="input-radio"
                     checked
@@ -77,7 +76,7 @@
                 <label>
                   <input
                     name="user-recommend"
-                    value="maybe"
+                    value="es-posible"
                     type="radio"
                     class="input-radio"
                   />Es posible</label
@@ -86,7 +85,7 @@
                 <label
                   ><input
                     name="user-recommend"
-                    value="not-sure"
+                    value="no-creo"
                     type="radio"
                     class="input-radio"
                   />No creo</label
